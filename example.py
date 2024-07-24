@@ -3,7 +3,7 @@ import image_dehazer
 
 if __name__ == "__main__":
 
-    HazeImg = cv2.imread('Images/class.jpg')						# read input image -- (**must be a color image**)
+    HazeImg = cv2.imread('Images/Room.jpg')						# read input image -- (**must be a color image**)
     HazeCorrectedImg, haze_map = image_dehazer.remove_haze(HazeImg, showHazeTransmissionMap=False)		# Remove Haze
 
    # cv2.imshow(HazeImg)
